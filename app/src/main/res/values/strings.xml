@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Movie Store MB</string>
+    <string name="title">Movie Name</string>
+    <string name="director">Director Name</string>
+    <string name="year">Release Year</string>
+    <string name="add_button">Add movie</string>
+    <string name="menu_item_update_movie">Update Movie</string>
+    <string name="menu_item_delete_movie">Delete Movie</string>
+    <string name="menu_item_add_movie">Add Movie</string>
+    <string name="errorMovieName">Warning</string>
+    <string name="errorMessage">Movie Name Field can not be empty</string>
+    <string name="errorButton">OK</string>
+    <string name="searchURL">https://www.youtube.com/results?search_query=</string>
+    <string name="confirmMovieTitle">DELETION</string>
+    <string name="confirmMessage">Do you want to remove this movie?</string>
+    <string name="button_yes">YES</string>
+    <string name="button_no">NO</string>
+    <string name="label_movie_title">movie title</string>
+    <string name="label_director_name">director</string>
+    <string name="label_release_year">release year</string>
+    <string name="watch_trailer">Watch Trailer:</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fillViewport="false">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_margin="5dp"
+            tools:ignore="UselessParent">
+            <TableRow android:id="@+id/titleTableRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/titleLabelTextView"
+                    android:text="@string/label_movie_title">
+                </TextView>
+                <TextView
+                    android:id="@+id/titleTextView">
+
+                </TextView>
+            </TableRow>
+
+
+            <TableRow android:id="@+id/directorTableRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/directorLabelTextView"
+                    android:text="@string/label_director_name">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/directorTextView">
+                    </TextView>
+            </TableRow>
+
+            <TableRow android:id="@+id/runningtimeTableRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/runningtimeLabelTextView"
+                    android:text="@string/label_release_year">
+
+                </TextView>
+                <TextView android:id="@+id/releaseYearTextView">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow android:id="@+id/trailerTableRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/trailerLabelTextView"
+                    android:text="@string/watch_trailer">
+                </TextView>
+                <Button android:id="@+id/searchButton"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/youtube_icon"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7816554778639642/4175809116">
+        <!--ca-app-pub-7816554778639642/4175809116-->
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
